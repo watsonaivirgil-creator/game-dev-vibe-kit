@@ -1,6 +1,6 @@
 {
   "repository": "https://raw.githubusercontent.com/watsonaivirgil-creator/game-dev-vibe-kit/main",
-  "version": "1.1.0",
+  "version": "1.2.0",
   "usage_rule": "Detect the active language and framework first. Filter modules matching the stack or 'any', list applicable functions, and fetch only the required raw file paths.",
   "modules": [
     {
@@ -16,6 +16,76 @@
       "frameworks": ["roblox", "rojo"],
       "functions": ["newRateLimiter", "getOrCreateEvent", "getOrCreateFunction"],
       "description": "Roblox server remote initialization and per-player anti-spam rate limiting."
+    },
+    {
+      "path": "core/luau/GachaMath.luau",
+      "stacks": ["luau", "lua"],
+      "frameworks": ["roblox", "rojo"],
+      "functions": ["gachaRoll", "weightedSelection", "dropTableCalculations"],
+      "description": "Core gacha probability and drop table math functions."
+    },
+    {
+      "path": "core/luau/Pity.luau",
+      "stacks": ["luau", "lua"],
+      "frameworks": ["roblox", "rojo"],
+      "functions": ["pityCounter", "softPity", "hardPityGuarantee"],
+      "description": "Pity counter state tracking and guaranteed pull logic for gacha systems."
+    },
+    {
+      "path": "core/luau/RewardMath.luau",
+      "stacks": ["luau", "lua"],
+      "frameworks": ["roblox", "rojo"],
+      "functions": ["scaleReward", "streakMultiplier", "rewardFormula"],
+      "description": "Pure math calculations for scaling player rewards and streak bonuses."
+    },
+    {
+      "path": "core/luau/Rewards.luau",
+      "stacks": ["luau", "lua"],
+      "frameworks": ["roblox", "rojo"],
+      "functions": ["grantReward", "claimDailyReward", "validateReward"],
+      "description": "Server-side reward distribution, cooldowns, and claim validation."
+    },
+    {
+      "path": "core/luau/Levels.luau",
+      "stacks": ["luau", "lua"],
+      "frameworks": ["roblox", "rojo"],
+      "functions": ["addXp", "getLevelFromXp", "xpToNextLevel"],
+      "description": "Player progression, XP accumulation, and level-up threshold calculations."
+    },
+    {
+      "path": "core/luau/Profiles.luau",
+      "stacks": ["luau", "lua"],
+      "frameworks": ["roblox", "rojo"],
+      "functions": ["loadProfile", "saveProfile", "reconcileData"],
+      "description": "Player data profile loading, saving, and default schema reconciliation."
+    },
+    {
+      "path": "core/luau/Purchases.luau",
+      "stacks": ["luau", "lua"],
+      "frameworks": ["roblox", "rojo"],
+      "functions": ["processReceipt", "validateProduct", "grantGamepass"],
+      "description": "Roblox MarketplaceService developer product and gamepass receipt handling."
+    },
+    {
+      "path": "core/luau/Remotes.luau",
+      "stacks": ["luau", "lua"],
+      "frameworks": ["roblox", "rojo"],
+      "functions": ["registerRemote", "fireClient", "onServerEvent"],
+      "description": "Centralized RemoteEvent and RemoteFunction networking wrapper."
+    },
+    {
+      "path": "core/luau/Announcer.luau",
+      "stacks": ["luau", "lua"],
+      "frameworks": ["roblox", "rojo"],
+      "functions": ["broadcastGlobal", "notifyRareDrop", "sendServerMessage"],
+      "description": "Server-wide and cross-server chat/UI announcement dispatcher."
+    },
+    {
+      "path": "core/luau/Util.luau",
+      "stacks": ["luau", "lua"],
+      "frameworks": ["roblox", "rojo"],
+      "functions": ["deepCopy", "tableMerge", "formatNumber"],
+      "description": "General-purpose Luau table, string, and number formatting helpers."
     }
   ]
 }
