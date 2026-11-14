@@ -1,6 +1,21 @@
 {
   "repository": "https://raw.githubusercontent.com/watsonaivirgil-creator/game-dev-vibe-kit/main",
-  "version": "1.0.0",
+  "version": "1.1.0",
   "usage_rule": "Detect the active language and framework first. Filter modules matching the stack or 'any', list applicable functions, and fetch only the required raw file paths.",
-  "modules": []
+  "modules": [
+    {
+      "path": "core/luau/GameMath.luau",
+      "stacks": ["luau", "lua"],
+      "frameworks": ["roblox", "rojo"],
+      "functions": ["damp", "rollWeighted", "calculatePityRate", "xpForLevel"],
+      "description": "Strict-typed Luau math utilities for weighted gacha/loot rolls, pity scaling, XP curves, and frame-independent damping."
+    },
+    {
+      "path": "core/luau/RemoteGuard.luau",
+      "stacks": ["luau", "lua"],
+      "frameworks": ["roblox", "rojo"],
+      "functions": ["newRateLimiter", "getOrCreateEvent", "getOrCreateFunction"],
+      "description": "Roblox server remote initialization and per-player anti-spam rate limiting."
+    }
+  ]
 }
