@@ -1,5 +1,5 @@
 {
-  "repository": "https://githubusercontent.com",
+  "repository": • "https://raw.githubusercontent.com/watsonaivirgil-creator/game-dev-vibe-kit/main",
   "version": "1.0.0",
   "usage_rule": "Detect the active language and framework first. Filter modules matching the stack or 'any', list applicable functions, and fetch only the required raw file paths.",
   "modules": []
